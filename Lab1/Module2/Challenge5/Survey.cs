@@ -1,12 +1,26 @@
-﻿namespace Survey;
+﻿using System.Diagnostics;
+
+namespace Survey;
 
 public class Survey
 {
     public string name;
     private int age;
     private string month;
-    private string country;
-    private double testResult;
+    private string zodiac;
+    private int birthYear;
+
+    public int BirthYear
+    {
+        get => birthYear;
+        set => birthYear = value;
+    }
+
+    public string Zodiac
+    {
+        get => zodiac;
+        set => zodiac = value ?? throw new ArgumentNullException(nameof(value));
+    }
 
     public string Name
     {
@@ -25,26 +39,21 @@ public class Survey
         get => month;
         set => month = value ?? throw new ArgumentNullException(nameof(value));
     }
-
-    public string Country
-    {
-        get => country;
-        set => country = value ?? throw new ArgumentNullException(nameof(value));
-    }
-
-    public double TestResult
-    {
-        get => testResult;
-        set => testResult = value;
-    }
     
-
-    public Survey(string name, int age, string month, string country, double testResult)
+    public Survey(string name, int age, string month, int year)
     {
         this.name = name;
         this.age = age;
         this.month = month;
-        this.country = country;
-        this.testResult = testResult;
+        this.birthYear = year;
+        switch(year)
+        {
+            case 1997:
+                this.zodiac = "Aquarius";
+                break;
+            default:
+                this.zodiac = "none";
+                break;
+        }
     }
 }
