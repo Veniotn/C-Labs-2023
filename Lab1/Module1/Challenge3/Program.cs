@@ -10,7 +10,7 @@ public class Challenge3
         for (int cycle = 0; cycle < 5; cycle++)
         {
             //setting the default values each cycle
-            int currentNum = 1;
+            int currentNum = 1, maxNum = 10;
             bool backwardCount = false;
             
             
@@ -19,7 +19,7 @@ public class Challenge3
             {
                 if (!backwardCount)
                 {
-                    backwardCount = currentNum == 9 ? true : false; //if the current number is 9 we know the next will be 10
+                    backwardCount = currentNum == (maxNum - 1); //if the current number is 9 we know the next will be 10
                     Console.WriteLine(currentNum);
                     currentNum++;
                 }

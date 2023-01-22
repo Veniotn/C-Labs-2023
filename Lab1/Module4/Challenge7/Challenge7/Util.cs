@@ -1,15 +1,13 @@
-﻿using System.Text.RegularExpressions;
-
-namespace Util
+﻿namespace Util
 {
     public class Console
     {
         public static string Ask(string question)
         {
-           System.Console.WriteLine(question);
+            System.Console.WriteLine(question);
             return System.Console.ReadLine();
         }
-    
+
         public static int AskInt(string question)
         {
             bool validNum = false;
@@ -26,11 +24,11 @@ namespace Util
                     System.Console.WriteLine("Invalid input.");
                 }
             }
-    
+
             return 0;
         }
-        
-        
+
+
         public static int AskIntWithRange(string question, int lowerRange, int higherRange)
         {
             bool validNum = false;
@@ -46,16 +44,19 @@ namespace Util
                     {
                         return num;
                     }
-                    System.Console.WriteLine("Sorry, only numbers between {0}-{1}", lowerRange,higherRange);
+
+                    System.Console.WriteLine("Sorry, only numbers between {0}-{1}", lowerRange, higherRange);
                 }
                 else
                 {
                     System.Console.WriteLine("Invalid input.");
                 }
             }
-    
+
             return 0;
         }
     }
 }
+
+
 
