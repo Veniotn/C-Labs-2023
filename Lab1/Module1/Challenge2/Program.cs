@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+//password challenge
+
 public class Challenge2
 {
     public static void Main(string[] args)
