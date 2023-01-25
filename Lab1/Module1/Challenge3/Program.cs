@@ -1,6 +1,8 @@
 ﻿
 namespace Challenge3;
 
+//1-10 For loop challenge
+
 public class Challenge3
 {
     public static void Main(string[] args)
