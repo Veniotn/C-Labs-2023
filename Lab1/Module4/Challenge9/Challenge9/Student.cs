@@ -1,6 +1,6 @@
 ﻿namespace SchoolTracker;
 
-
+//oop interface student teacher portal
 
 
 public class Student : Member, IGraduate

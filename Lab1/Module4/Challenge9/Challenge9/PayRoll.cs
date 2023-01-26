@@ -1,5 +1,6 @@
 ﻿using System.Text;
 
+//oop interface student teacher portal
 namespace SchoolTracker
 {
     interface IPayee

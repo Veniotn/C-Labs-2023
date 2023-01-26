@@ -1,5 +1,5 @@
 ﻿namespace SchoolTracker;
-
+//oop interface student teacher portal
 public interface IGraduate
 {
     void Graduate();

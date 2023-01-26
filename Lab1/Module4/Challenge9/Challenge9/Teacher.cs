@@ -1,5 +1,5 @@
 ﻿namespace SchoolTracker;
-
+//oop interface student teacher portal
 public class Teacher : Member, IPayee
 {
     public string Subject;
